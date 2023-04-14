@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/single-product.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <title>Products</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="products.html">
+                    <img src="images/logo-3.png" width="125px">
+                </a>
+            </div>
+            <nav>
+
+            </nav>
+            <img src="images/cart.png" width="30px" height="30px">
+            <!--change cart icon--><img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+    <!--single products-->
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/product-1.jpg" width="100%">
+            </div>
+            <div class="col-2">
+                <p>Products/The Beatles</p>
+                <h1>The Beatles</h1>
+                <h4>$50.00</h4>
+                <select>
+                    <option>Select type</option>
+                    <option>CD</option>
+                    <option>DVD</option>
+                    <option>Tape</option>
+                    <option>Vinyl</option>
+                </select>
+                <input type="number" value="1" min="1" max="10">
+                <a href="" class="btn">Add To Cart</a>
+            </div>
+        </div>
+    </div>
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Products</h2>
+            <a href="products.html">
+                <p>View more</p>
+            </a>
+
+        </div>
+    </div>
+
+
+
+
+    <!------------Products------------>
+    <div class="small-container">
+        <div class="row">
+            <div class="col-4">
+                <img src="images/planetmars.jpg">
+                <h4>Planet Mars</h4>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/bad.jpg">
+                <h4>Michael Jackson-Bad Album</h4>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/pinkfloyd.jpg">
+                <h4>Pink Floyd</h4>
+                <p>$50.00</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/products.js"></script>
+</body>
+
+</html>

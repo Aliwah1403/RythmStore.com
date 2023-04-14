@@ -1,0 +1,75 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+	background: black;
+}
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 40px 20px 0 20px;
+	opacity: 0;
+	display: none;
+}
+.container .heading{
+	width: 50%;
+	padding-bottom: 50px;
+}
+.container .heading h3{
+	font-size: 3rem;
+	font-weight: bolder;
+	border-bottom: 3px solid #222;
+	color: white;
+	font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+}
+.container .heading p{
+	font-size: 1rem;
+	text-align: center;
+	align-items: center;
+	padding-top: 10px;
+	color: white;
+	font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+}
+.container .box{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	
+}
+.container .box .dream{
+	display: flex;
+	flex-direction: column;
+	width: 32.5%;
+}
+.container .box .dream img{
+	width: 100%;
+	padding-bottom: 15px;
+	border-radius: 7px;
+	filter: grayscale(100%);
+}
+.container .box .dream img:hover{
+    transform: scale(1.1);
+	border: 3px solid black;
+	filter: none; 
+}
+
+@media only screen and (max-width: 769px){
+	.container .box{
+		flex-direction: column;
+	}
+	.container .box .dream{
+		width: 100%;
+	}
+}
+@media only screen and (max-width:643px){
+	.container .heading{
+	width: 100%;
+	}
+	.container .heading h3{
+	font-size: 1rem;
+	}
+}

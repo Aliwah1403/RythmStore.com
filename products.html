@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <title>Products</title>
+</head>
+
+<body>
+    <!--Header-->
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo-3.png" width="125px">
+                    </a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="member.html">Membership</a>
+                        </li>
+                        <li>
+                            <a href="account.html">Account</a>
+                        </li>
+
+                    </ul>
+                </nav>
+                <img src="images/cart.png" width="30px" height="30px">
+                <!--change cart icon-->
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+
+        </div>
+    </div>
+    <!--Header-->
+
+
+
+
+    <!------------Products------------>
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Our Products</h2>
+            <select>
+                <option>Default Sorting</option>
+                <option>Sort by price</option>
+                <option>Sort by popularity</option>
+                <option>Sort by sales</option>
+            </select>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <a href="beatles.html">
+                    <img src="images/product-1.jpg">
+                </a>
+                <h4>The Beatles</h4>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <a href="single-product.html">
+                    <img src="images/product3.jpg">
+                </a>
+                <h4>The Weeknd-Starboy Album</h4>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <a href="pinkfloyd.html">
+                    <img src="images/pinkfloyd.jpg">
+                </a>
+                <h4>Pink Floyd</h4>
+                <p>$50.00</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <a href="rollingstone68.html">
+                    <img src="images/rollingstone1968.jpg">
+                </a>
+                <h4>Rolling Stone-1968 Edition</h4>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <a href="rollingstone12.html">
+                    <img src="images/rollingstone2012.jpg">
+                </a>
+                <h4>Rolling Stone-2012 Edition</h4>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <a href="totalguitar09.html">
+                    <img src="images/totalguitar09.jpg">
+                </a>
+                <h4>Total Guitar-2009 Edition</h4>
+                <p>$50.00</p>
+            </div>
+        </div>
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
+        </div>
+    </div>
+    <!--Products-->
+
+
+    <script src="js/products.js"></script>
+</body>
+
+</html>
