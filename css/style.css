@@ -677,12 +677,6 @@ button:hover {
 /*contact */
 
 /* Footer */
-#footer * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
 #footer ul {
   list-style: none;
 }
@@ -692,11 +686,26 @@ button:hover {
   background: #121315;
 }
 
+#footer h3 {
+  font-weight: 600;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-bottom: 7px;
+  text-transform: capitalize;
+}
+
 #footer p {
   color: #ccc;
-  max-width: 25em;
-  font-size: 0.9em;
+  max-width: 20em;
+  font-size: 1.5rem;
   line-height: 23px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 #footer a {
@@ -722,11 +731,11 @@ button:hover {
 
 #footer .media-icons li {
   display: inline-block;
-  margin: 0.5em 0.5em 0.5em 0;
+  margin: 0.5em 1.5em 0.5em 0;
 }
 
 #footer .media-icons a {
-  font-size: 1.1em;
+  font-size: 2.1em;
   width: 2em;
   height: 2em;
   border: 1px solid #fff;
@@ -755,6 +764,8 @@ button:hover {
 #footer .menu a {
   transition: 0.3s;
   font-weight: 600;
+  font-size: 1.5rem;
+  padding: 5px;
 }
 
 #footer .menu a:hover {
@@ -767,10 +778,11 @@ button:hover {
 }
 
 #footer .input-wrap input {
-  padding: 0.5em;
-  border: none;
+  padding: 1.5em;
+  border: 1px solid white;
   background: #20232a;
   color: #ccc;
+  border-radius: 14px;
 }
 
 #footer .input-wrap input:focus {
@@ -778,15 +790,60 @@ button:hover {
 }
 
 #footer .input-wrap button {
-  padding: 0.8em;
-  background: #ff2b00;
-  border: none;
-  color: #fff;
+  --primary-color: #121315;
+  --secondary-color: #fff;
+  --hover-color: crimson;
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 50%;
+  color: var(--secondary-color);
+  padding: 2em 1.8em;
+  background: var(--primary-color);
+  display: flex;
+  transition: 0.2s background;
+  margin-left: 5px;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
 }
 
-#footer .input-wrap button:hover {
-  background: #fff;
-  color: #111;
+#footer .input-wrap button .arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer .input-wrap button .arrow {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  background: var(--primary-color);
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.2s;
+}
+
+#footer .input-wrap button .arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+#footer .input-wrap button:hover .arrow {
+  background: var(--secondary-color);
+}
+
+#footer .input-wrap button:hover .arrow:before {
+  right: 0;
 }
 /* 
 #footer {
