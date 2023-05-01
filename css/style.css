@@ -683,7 +683,13 @@ button:hover {
 
 #footer {
   color: #fff;
-  background: #121315;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 1%,
+    rgba(0, 0, 0, 1) 31%,
+    rgba(0, 0, 0, 1) 55%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }
 
 #footer h3 {
@@ -720,6 +726,7 @@ button:hover {
   display: flex;
   justify-content: space-between;
   gap: 2em;
+  flex-direction: row;
 }
 
 #footer .brand {
@@ -799,11 +806,11 @@ button:hover {
   border: 0;
   border-radius: 50%;
   color: var(--secondary-color);
-  padding: 2em 1.8em;
-  background: var(--primary-color);
+  padding: 1em 1.8em;
+  background: var(--hover-color);
   display: flex;
   transition: 0.2s background;
-  margin-left: 5px;
+  margin-left: 10px;
   align-items: center;
   gap: 0.6em;
   font-weight: bold;
@@ -840,6 +847,7 @@ button:hover {
 
 #footer .input-wrap button:hover .arrow {
   background: var(--secondary-color);
+  transform: scale(1.1);
 }
 
 #footer .input-wrap button:hover .arrow:before {
