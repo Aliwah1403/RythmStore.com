@@ -774,7 +774,7 @@ button:hover {
 #footer .menu a {
   transition: 0.3s;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   padding: 5px;
 }
 
@@ -846,6 +846,10 @@ button:hover {
   transition: 0.2s;
   padding: 3px;
   transform: rotate(-45deg);
+}
+
+#footer .input-wrap button:hover {
+  cursor: pointer;
 }
 
 #footer .input-wrap button:hover .arrow {
