@@ -11,15 +11,17 @@
 }
 
 .footer_logo {
-  font-size: 24px;
+  font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
   color: #fff;
   cursor: pointer;
+  font-family: 'Amatic SC', cursive;
 }
 
 .footer_logo span {
   color: crimson;
+  font-family: 'Amatic SC', cursive;
 }
 
 .footer ul {
