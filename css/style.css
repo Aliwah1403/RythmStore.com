@@ -1,3 +1,5 @@
+@import url("sections/footer.css");
+
 * {
   padding: 0;
   margin: 0;
@@ -678,7 +680,7 @@ button:hover {
 /*contact */
 
 /* Footer */
-#footer ul {
+/* #footer ul {
   list-style: none;
 }
 
@@ -859,7 +861,7 @@ button:hover {
 
 #footer .input-wrap button:hover .arrow:before {
   right: 0;
-}
+} */
 /* 
 #footer {
   background-image: linear-gradient(60deg, black 0%, black 100%);
